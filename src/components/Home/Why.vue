@@ -17,7 +17,10 @@
 			<h3>Let’s demonstrate an example of this.</h3>
 
 			<pre><code v-html="highlight(`local is_executor_closure = is_syn_closure or is_fluxus_closure or is_sentinel_closure or is_krnl_closure or is_proto_closure or is_calamari_closure or is_electron_closure or is_elysian_closure`,'lua')"></code></pre>
-			<sub>This example is also available on the <a href="#">GitHub page</a>.</sub>
+			<sub
+				>This example is also available on the
+				<a href="https://github.com/unified-naming-convention/NamingStandard/blob/main/README.md" target="_blank">GitHub page</a>.</sub
+			>
 			<p>
 				This is a scenario, as a script developer, for if you’d like to know whether a function is by the script executor or not. If you’d
 				like to add cross compatibility so that it works across multiple brands - you <strong>must</strong> have something like that (and

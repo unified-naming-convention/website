@@ -9,7 +9,9 @@
 		</div>
 		<div class="aside">
 			<p class="protected">This website is protected by <a href="https://nexuspipe.com" target="_blank">NexusPIPE</a>.</p>
-			<p class="opensource">This website is also open source on <a href="/source" target="_blank">GitHub</a>.</p>
+			<p class="opensource">
+				This website is also open source on <a href="https://github.com/unified-naming-convention/website" target="_blank">GitHub</a>.
+			</p>
 
 			<br />
 			<div class="footnotes">

@@ -7,10 +7,20 @@
 				A syndicate of script executor products will be able to push towards a universally accepted API where scripting is <em>simple</em> and
 				<em>compatibile</em> with all products.
 			</p>
-			<button primary>Access the API</button>
+			<button primary @click="openAPI">Access the API</button>
 		</div>
 	</div>
 </template>
+
+<script>
+export default {
+	methods: {
+		openAPI() {
+			window.open("https://github.com/unified-naming-convention/NamingStandard", "_blank");
+		},
+	},
+};
+</script>
 
 <style lang="scss" scoped>
 .section {
