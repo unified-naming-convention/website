@@ -11,13 +11,6 @@ const routes = [
 		name: "badge",
 		component: () => import("../views/Badge.vue"),
 	},
-	{
-		path: "/source",
-		name: "source",
-		beforeEnter() {
-			window.location.href = "https://jck.cx/g/";
-		},
-	},
 ];
 
 const router = createRouter({
