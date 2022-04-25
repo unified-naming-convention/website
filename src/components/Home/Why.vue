@@ -15,8 +15,11 @@
 		</div>
 		<div class="example">
 			<h3>Let’s demonstrate an example of this.</h3>
-
-			<pre><code v-html="highlight(`local is_executor_closure = is_syn_closure or is_fluxus_closure or is_sentinel_closure or is_krnl_closure or is_proto_closure or is_calamari_closure or is_electron_closure or is_elysian_closure`,'lua')"></code></pre>
+			<div class="checkbox">
+				<label for="showUNCVariant">What it could look like on UNC</label>
+				<input type="checkbox" id="showUNCVariant" name="showUNCVariant" v-model="showUNCVariant" />
+			</div>
+			<pre><code v-html="highlight(showUNCVariant ? `local is_executor_closure = isexecutorclosure` : `local is_executor_closure = is_syn_closure or is_fluxus_closure or is_sentinel_closure or is_krnl_closure or is_proto_closure or is_calamari_closure or is_electron_closure or is_elysian_closure`,'lua')"></code></pre>
 			<sub
 				>This example is also available on the
 				<a href="https://github.com/unified-naming-convention/NamingStandard/blob/main/README.md" target="_blank">GitHub page</a>.</sub
@@ -47,6 +50,11 @@ export default {
 			let html = hljs.highlight(code, { language }).value;
 			return html;
 		},
+	},
+	data() {
+		return {
+			showUNCVariant: false,
+		};
 	},
 };
 </script>
@@ -81,9 +89,23 @@ export default {
 			font-size: 2.2rem;
 			font-weight: 600;
 		}
+		.checkbox {
+			margin-top: 4rem;
+			background: $text-primary;
+			width: max-content;
+			margin-left: auto;
+			border-radius: 5px;
+			padding: 0.2rem;
+			box-sizing: border-box;
+			color: $background-secondary;
+			input[type="checkbox"] {
+				border: 1px solid $text-secondary;
+				margin-left: 0.5rem;
+			}
+		}
 
 		pre {
-			margin: 1rem 0;
+			margin: 0.5rem 0 1rem 0;
 			background: $text-primary;
 			border-radius: 5px;
 			padding: 10px;
