@@ -54,7 +54,7 @@ export default {
 				},
 				{
 					name: "Fluxus",
-					url: "https://fluxteam.xyz",
+					url: "https://fluxteam.net",
 					image: "Fluxus.png",
 				},
 				{
