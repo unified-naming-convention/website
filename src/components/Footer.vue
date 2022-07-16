@@ -12,13 +12,6 @@
 			<p class="opensource">
 				This website is also open source on <a href="https://github.com/unified-naming-convention/website" target="_blank">GitHub</a>.
 			</p>
-
-			<br />
-			<div class="footnotes">
-				<p v-if="$route.path == '/'">
-					<em><sup>*</sup>1.</em> Early supporters were invited to add support before our public release.
-				</p>
-			</div>
 		</div>
 	</div>
 </template>

@@ -36,8 +36,6 @@ export default {
 	display: flex;
 	flex-direction: column;
 
-	border-bottom: 1px solid lighten($text-primary, 50%);
-
 	> img {
 		text-align: left;
 		margin-left: 0;
