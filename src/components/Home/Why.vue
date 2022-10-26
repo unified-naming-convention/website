@@ -43,10 +43,10 @@
 </template>
 
 <script>
+import hljs from "highlight.js"
 export default {
 	methods: {
 		highlight(code, language) {
-			let hljs = require("highlight.js");
 			let html = hljs.highlight(code, { language }).value;
 			return html;
 		},
