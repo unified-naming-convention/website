@@ -12,7 +12,9 @@
 					UNC is made to combat complex scripting and embrace a fresh standard that provides a far smoother experience for scripters.
 					Meaning <strong>one version of a script works across any fully UNC supported product</strong>!
 				</p>
-				<button primary @click="openAPI">Access the API</button>
+				<a href="https://github.com/unified-naming-convention/NamingStandard" target="_blank" rel="noopener noreferrer">
+					<button primary>Access the API</button>
+				</a>
 			</div>
 			<div class="image">
 				<img src="@/assets/Example.png" alt="" />
@@ -21,15 +23,6 @@
 	</div>
 </template>
 
-<script>
-export default {
-	methods: {
-		openAPI() {
-			window.open("https://github.com/unified-naming-convention/NamingStandard", "_blank");
-		},
-	},
-};
-</script>
 <style lang="scss" scoped>
 .section {
 	background-color: $background-secondary;
@@ -59,6 +52,10 @@ export default {
 				color: $text-secondary;
 				line-height: 1.5;
 				font-size: 1.5rem;
+			}
+
+			> a {
+				text-decoration: none;
 			}
 		}
 
